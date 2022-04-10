@@ -1,0 +1,100 @@
+:root{
+    --color-background:#F7ECAC;
+    --color-primary: #0E759F;
+    --color-font: #151515;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-font);;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 0px 50px;
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+span{
+    color: var(--color-primary)
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 8px;
+}
+
+li a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .9s;
+}
+
+li a:hover{
+    font-size: 1.6rem;
+    color: var(--color-primary);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header_img img{
+    width: 300px;
+    border-radius: 50%;
+    border: dotted 4.5px var(--color-font);
+}
+
+section{
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.main{
+    padding: 1rem;
+}
+
+.my-title{
+    font-size: 2rem;
+}
+
+.my-description{
+    font-size: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
+
+footer a {
+    text-align: center;
+    margin: 20px;
+}
+
+.linkedin{
+    width: 50px;
+}
+
+.github{
+    width: 50px;
+}
+
