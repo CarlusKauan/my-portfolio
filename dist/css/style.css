@@ -12,12 +12,12 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--color-font);;
+    color: var(--color-font);
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    padding: 0px 50px;
+.title{
+    letter-spacing: 2px;
 }
 
 body{
@@ -28,25 +28,41 @@ span{
     color: var(--color-primary)
 }
 
-ul{
+nav{
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
     align-items: center;
-    padding: 20px;
+    list-style-type: none;
     margin-bottom: 8px;
+    background-color: var(--color-primary);
+    height: 8vh;
 }
 
-li a{
-    font-size: 1.5rem;
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+a{
+    font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
     transition: .9s;
 }
 
 li a:hover{
-    font-size: 1.6rem;
-    color: var(--color-primary);
+    color: var(--color-background);
+}
+
+.logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .header{
@@ -54,12 +70,14 @@ li a:hover{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin: 35px 0px 5px 0px;
 }
 
 .header_img img{
     width: 300px;
     border-radius: 50%;
     border: dotted 4.5px var(--color-font);
+    cursor: pointer;
 }
 
 section{
