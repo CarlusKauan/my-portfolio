@@ -1,5 +1,6 @@
 :root{
     --color-background:#F7ECAC;
+    --color-background-secondary: #EFDA9B;
     --color-primary: #0E759F;
     --color-font: #151515;
 }
@@ -60,7 +61,7 @@ li a:hover{
 }
 
 .logo{
-    font-size: 2rem;
+    font-size: 1.65rem;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -82,7 +83,7 @@ li a:hover{
 
 section{
     padding: 8px;
-    margin-bottom: 8px;
+    margin: 8px 25px;
 }
 
 .main{
@@ -116,3 +117,86 @@ footer a {
     width: 50px;
 }
 
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor:pointer;
+}
+
+.skill-title{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: var(--color-background-secondary);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: .5s;
+}
+
+.skill-title h3{
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+}
+
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: var(--color-primary);
+    transition: .5s;
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: var(--color-primary);
+    transition: .5s;
+}
+
+.img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: rgba(100, 100, 100, 0.1);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
