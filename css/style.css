@@ -1,6 +1,7 @@
 :root{
     --color-background:#F7ECAC;
     --color-background-secondary: #EFDA9B;
+    --color-white: #f2f2f2;
     --color-primary: #0E759F;
     --color-font: #151515;
 }
@@ -121,11 +122,17 @@ footer a {
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     justify-content: center;
+    background-color: var(--color-background-secondary);
+    border-radius: 8px;
     align-items: center;
     text-align: center;
-    gap: 1rem;
-    padding: 1rem 80px;
-    font-size: 1rem;
+    gap: 2.5rem;
+    padding: 1rem 50px;
+    font-size: .9rem;
+}
+
+.my-title{
+    margin-bottom: 1rem;
 }
 
 .skill-box{
@@ -139,7 +146,7 @@ footer a {
     flex-direction: column;
     align-items: center;
     padding: .8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     position: relative;
 }
 
