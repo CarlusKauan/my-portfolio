@@ -93,6 +93,7 @@ section{
 
 .my-title{
     font-size: 2rem;
+    margin-bottom: 2px;
 }
 
 .my-description{
@@ -194,3 +195,29 @@ footer a {
     width: 50px;
     z-index: 2;
 }
+
+
+/*  Session Projects  */
+
+.my-projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projects_link {
+    justify-content:center;
+    text-align: center;
+}
+
+.projects_link img {
+    width: 300px;
+    height: 300px;
+    margin: 20px 0px auto;
+    text-align: center;
+}
+
+
+.my-description-projects{ 
+    font-size: 1.2rem;
+}
+
